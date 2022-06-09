@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="19.758">
+    <testcase classname="US1002 kullanici sayfada hesap olusturabilmeli" name="TC02 kullanici hesap olusturabilmeli" time="19.64">
+        <system-out>
+            <![CDATA[Given kullanici "apUrl" anasayfasinda.......................................passed
+Then kullanici singine tiklar...............................................passed
+And kullanici create account bolumune email adresi girer....................passed
+And kullanici create an account butonuna basar..............................passed
+And kullanici gerekli bilgileri girer.......................................passed
+And kullanici Register butonuna basar.......................................passed
+Then hesap olustugunu dogrular..............................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
