@@ -57,7 +57,7 @@ public class AutomationPracticeStepDefinitions {
         Select select5 = new Select(ap.ddmCountry);
         select5.selectByVisibleText("United States");
 
-        ap.info.sendKeys("Zeusu kestim");
+        ap.info.sendKeys("Zeus");
         ap.homePhone.sendKeys("+905055555555");
         ap.mobilePhone.sendKeys("+905055555554");
         ap.myAddress.sendKeys("www.facebook.com");
