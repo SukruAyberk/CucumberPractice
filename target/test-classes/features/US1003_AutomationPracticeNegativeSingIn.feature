@@ -1,5 +1,6 @@
 Feature: US1003 kullanici gecerli olmayan bir email ile kayit olamaz
 
+  @appositivetest
   Scenario: TC03 kullanici hesap acamamali
     Given kullanici "apUrl" anasayfasinda
     Then kullanici singine tiklar

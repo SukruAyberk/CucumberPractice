@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="19.758">
-    <testcase classname="US1002 kullanici sayfada hesap olusturabilmeli" name="TC02 kullanici hesap olusturabilmeli" time="19.64">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="18.688">
+    <testcase classname="US1003 kullanici gecerli olmayan bir email ile kayit olamaz" name="TC03 kullanici hesap acamamali" time="18.563">
         <system-out>
             <![CDATA[Given kullanici "apUrl" anasayfasinda.......................................passed
 Then kullanici singine tiklar...............................................passed
-And kullanici create account bolumune email adresi girer....................passed
-And kullanici create an account butonuna basar..............................passed
-And kullanici gerekli bilgileri girer.......................................passed
-And kullanici Register butonuna basar.......................................passed
-Then hesap olustugunu dogrular..............................................passed
+And kullanici create account bolumune gecersiz email adresi girer...........passed
+Then kullanici create an account butonuna basar.............................passed
+And error mesajinin "Invalid email address." oldugunu dogrula...............passed
 ]]>
         </system-out>
     </testcase>

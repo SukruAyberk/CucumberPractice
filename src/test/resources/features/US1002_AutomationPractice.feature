@@ -1,6 +1,6 @@
 Feature: US1002 kullanici sayfada hesap olusturabilmeli
 
-  @aptest
+  @apnegativetest
   Scenario: TC02 kullanici hesap olusturabilmeli
     Given kullanici "apUrl" anasayfasinda
     Then kullanici singine tiklar
