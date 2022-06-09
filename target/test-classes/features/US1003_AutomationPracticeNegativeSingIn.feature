@@ -5,4 +5,4 @@ Feature: US1003 kullanici gecerli olmayan bir email ile kayit olamaz
     Then kullanici singine tiklar
     And kullanici create account bolumune gecersiz email adresi girer
     Then kullanici create an account butonuna basar
-    And error mesajinin "Invalid email address" oldugunu dogrula
+    And error mesajinin "Invalid email address." oldugunu dogrula

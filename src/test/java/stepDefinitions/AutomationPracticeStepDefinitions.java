@@ -18,7 +18,7 @@ public class AutomationPracticeStepDefinitions {
 
     @Then("kullanici create account bolumune email adresi girer")
     public void kullanici_create_account_bolumune_email_adresi_girer() {
-        ap.emailTextBox.sendKeys("kratonodinson31@gmail.com");
+        ap.emailTextBox.sendKeys("kratonodinson33@gmail.com");
     }
 
     @Then("kullanici create an account butonuna basar")
