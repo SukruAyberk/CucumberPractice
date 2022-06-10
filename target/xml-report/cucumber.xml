@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="0.191">
-    <testcase classname="US1005 kullanici istenen satir ve sutun ile degeri yazdirabilmeli" name="TC05 kullanici istenen satir ve sutundaki degeri yazdirir" time="0.05">
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="0.302">
+    <testcase classname="US1008 kullanici alerts'e cikinca bassin" name="TC08 alerts" time="0.091">
         <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception">
             <![CDATA[Given kullanici "guruUrl" anasayfasinda.....................................passed
-Then "IstenenSatir" ve "IstenenSutun" degerini yazdirir.....................undefined
+Then kullanici alertse tiklar...............................................undefined
+And On button click, alert will appear after 5 seconds karsisindaki click me butonuna basar.skipped
+And Allert’in gorunur olmasini bekleyin.....................................skipped
+And Allert uzerindeki yazinin “This alert appeared after 5 seconds” oldugunu test edin.skipped
+And Ok diyerek alerti kapatin...............................................skipped
 ]]>
         </failure>
     </testcase>
