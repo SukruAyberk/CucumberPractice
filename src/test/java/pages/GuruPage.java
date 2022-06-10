@@ -16,4 +16,8 @@ public class GuruPage {
     @FindBy(xpath = "//thead//tr//th")
     public List<WebElement> baslikListesi;
 
+    @FindBy(xpath = "//tbody//tr[1]//td[1]")
+    public List<WebElement> istenenCell;
+
+
 }
