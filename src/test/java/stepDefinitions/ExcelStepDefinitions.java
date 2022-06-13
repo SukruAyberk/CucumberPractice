@@ -8,16 +8,22 @@ import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.junit.Assert;
 
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 
 public class ExcelStepDefinitions {
 
     Workbook workbook;
+    String filePath = "src/test/resources/ulkeler.xlsx";
+    FileInputStream fis = new FileInputStream(filePath);
+
+    public ExcelStepDefinitions() throws FileNotFoundException {
+    }
 
     @Given("kullanici excel dosyasini kullanilabilir hale getirir")
     public void kullanici_excel_dosyasini_kullanilabilir_hale_getirir() throws IOException {
-        String filePath = "src/test/resources/ulkeler.xlsx";
-        FileInputStream fis = new FileInputStream(filePath);
+
         workbook = WorkbookFactory.create(fis);
     }
 
@@ -53,5 +59,17 @@ public class ExcelStepDefinitions {
         Assert.assertTrue(fizikiKullanilanSatir == actualFizKulSatir);
     }
 
+    @Then("kullanici {int} satir {int} celle {string} yazdirir")
+    public void kullanici_satir_celle_yazdirir(Integer row, Integer cell, String istenenKelime) {
+        workbook.getSheet("Sayfa2").getRow(row).createCell(cell).setCellValue(istenenKelime);
+    }
 
+    @And("dosyayi kaydeder ve kapatir")
+    public void dosyayiKaydederVeKapatir() throws IOException {
+        String filePath = "src/test/resources/ulkeler.xlsx";
+        FileOutputStream fos = new FileOutputStream(filePath);
+        workbook.write(fos);
+        fis.close();
+        fos.close();
+    }
 }
